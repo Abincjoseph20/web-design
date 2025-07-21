@@ -1,0 +1,113 @@
+/* Targets ONLY the round image container */
+.featured-image.ratio.ratio-1x1 {
+  width: 90px !important;   /* Adjust this value */
+  height: 90px !important;  /* Must match width */
+  min-width: unset !important; /* Remove any min-width constraints */
+}
+
+/* Optional: Ensure image scales properly */
+.featured-image img.media-cover {
+  object-fit: cover !important; /* Maintains aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Font Settings */
+body {
+    font-family: 'Inter', sans-serif; /* Replace with your preferred font family */
+    color: #333; /* Default text color */
+}
+
+/* Headings (h1 to h9) */
+h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+    font-family: 'Inter', sans-serif; /* Same font family for consistency */
+    font-weight: 600; /* Bold weight for headings */
+    margin: 0; /* Remove default margins */
+    line-height: 1.2; /* Compact line height for headings */
+}
+
+h1 {
+    font-size: 2.5rem; /* Large heading size */
+}
+
+h2 {
+    font-size: 2rem; /* Medium heading size */
+}
+
+h3 {
+    font-size: 1.75rem; /* Subheading size */
+}
+
+h4 {
+    font-size: 1.5rem; /* Smaller subheading size */
+}
+
+h5 {
+    font-size: 1.25rem; /* Small heading size */
+}
+
+h6, h7, h8, h9 {
+    font-size: 1rem; /* Tiny heading size */
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* Standard paragraph size */
+    line-height: 1.6; /* Comfortable line height for readability */
+    margin: 0 0 1.5rem 0; /* Bottom margin for spacing */
+}
+
+/* Div Elements */
+div {
+    font-family: 'Inter', sans-serif; /* Ensure consistent font across all divs */
+}
+
+/* Category Tags (e.g., Business, Sports, Tech) */
+.category-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #007bff; /* Blue color for tags */
+    border-bottom: 2px solid #007bff; /* Underline effect */
+    padding-bottom: 2px; /* Space between text and underline */
+}
+
+/* Author and Date Information */
+.author-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #666; /* Secondary text color */
+    margin-top: 0.5rem; /* Spacing from the title */
+}
+
+/* Example Usage for Specific Elements */
+.post-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.post-excerpt {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
