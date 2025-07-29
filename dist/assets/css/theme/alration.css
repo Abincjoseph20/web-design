@@ -16,87 +16,73 @@
 
 
 
+/* Import Inter font (include this in your HTML head too) */
+/* Or import it here if using preprocessor or inlined CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-
-
-
-
-
-
-
-
-
-/* Global Font Settings */
+/* Global Font and Body Styling */
 body {
-    font-family: 'Inter', sans-serif; /* Replace with your preferred font family */
-    color: #333; /* Default text color */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-/* Headings (h1 to h9) */
-h1, h2, h3, h4, h5, h6, h7, h8, h9 {
-    font-family: 'Inter', sans-serif; /* Same font family for consistency */
-    font-weight: 600; /* Bold weight for headings */
-    margin: 0; /* Remove default margins */
-    line-height: 1.2; /* Compact line height for headings */
+/* Dark Mode Styling */
+body.dark {
+    color: #ddd;
+    background-color: #111;
 }
 
-h1 {
-    font-size: 2.5rem; /* Large heading size */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
 }
 
-h2 {
-    font-size: 2rem; /* Medium heading size */
-}
-
-h3 {
-    font-size: 1.75rem; /* Subheading size */
-}
-
-h4 {
-    font-size: 1.5rem; /* Smaller subheading size */
-}
-
-h5 {
-    font-size: 1.25rem; /* Small heading size */
-}
-
-h6, h7, h8, h9 {
-    font-size: 1rem; /* Tiny heading size */
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
 
 /* Paragraphs */
 p {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem; /* Standard paragraph size */
-    line-height: 1.6; /* Comfortable line height for readability */
-    margin: 0 0 1.5rem 0; /* Bottom margin for spacing */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
 }
 
-/* Div Elements */
+/* Div elements */
 div {
-    font-family: 'Inter', sans-serif; /* Ensure consistent font across all divs */
+    font-family: 'Inter', sans-serif;
 }
 
-/* Category Tags (e.g., Business, Sports, Tech) */
+/* Category Tags */
 .category-tag {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #007bff; /* Blue color for tags */
-    border-bottom: 2px solid #007bff; /* Underline effect */
-    padding-bottom: 2px; /* Space between text and underline */
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 2px;
 }
 
-/* Author and Date Information */
+/* Author & Date */
 .author-date {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
-    color: #666; /* Secondary text color */
-    margin-top: 0.5rem; /* Spacing from the title */
+    color: #666;
+    margin-top: 0.5rem;
 }
 
-/* Example Usage for Specific Elements */
+/* Post Titles and Excerpts */
 .post-title {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
@@ -111,3 +97,42 @@ div {
     line-height: 1.6;
     color: #555;
 }
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Dark Mode Adjustments */
+body.dark .category-tag {
+    color: #00b3ff;
+    border-bottom-color: #00b3ff;
+}
+
+body.dark .author-date {
+    color: #aaa;
+}
+
+body.dark .post-title {
+    color: #ddd;
+}
+
+body.dark .post-excerpt {
+    color: #bbb;
+}
+
+body.dark a {
+    color: #00b3ff;
+}
+
+body.dark a:hover {
+    color: #0099ff;
+}
+
+
